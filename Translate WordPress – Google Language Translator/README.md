@@ -30,6 +30,15 @@ Line : 369 - 373
 3. Save
 4. The XSS will be executed
 
+## Step To Reproduce - With Exploit.py: 
+
+```
+python3 exploit.py http://localhost:8888/wordpress/ admin admin
+```
+
+![Exploit](exploit.png)
+
+
 ## Impact:
 Stored XSS on the __floating_widget_text__ parameter and can be affected to various user page. 
 
