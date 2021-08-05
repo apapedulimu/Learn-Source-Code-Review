@@ -1,21 +1,21 @@
 # Authenticated Stored XSS on Custom text for the floating widget field - Translate WordPress – Google Language Translator
 
 ## About the Plugin:
-Version: 6.0.11__
-Author: Translate AI Multilingual Solutions__
-Last Updated: 2 weeks ago__
-Requires WordPress Version: 2.9 or higher__
-Compatible up to: 5.8__
-Active Installations: 100,000+__
-URL: https://wordpress.org/plugins/google-language-translator/__
+Version: 6.0.11  
+Author: Translate AI Multilingual Solutions  
+Last Updated: 2 weeks ago  
+Requires WordPress Version: 2.9 or higher  
+Compatible up to: 5.8  
+Active Installations: 100,000+  
+URL: https://wordpress.org/plugins/google-language-translator/  
 
 ## Vulnerability Detail: 
 ## Description: 
 The vulnerability appears on the Custom text for the floating widget field, the parameter isn't escaped the HTML Injection. When taking a look at the source code, the parameter __floating_widget_text__ not covered by any filter and makes it's vulnerable to XSS, since the parameter is saving the value. The Stored XSS can be happening and stored on the __floating_widget_text__ parameter. 
 
 ## Vulnerable Code: 
-File: google-languange-translator.php__
-Line : 369 - 373
+File: google-languange-translator.php  
+Line : 369 - 373  
 ```
     if( $is_active == 1) {
       if ($floating_widget=='yes') {
