@@ -15,6 +15,7 @@ The vulnerability appears on the Custom text for the floating widget field, the 
 
 ## Vulnerable Code: 
 File: google-languange-translator.php
+
 Line : 369 - 373
 ```
     if( $is_active == 1) {
