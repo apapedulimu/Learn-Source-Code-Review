@@ -42,6 +42,8 @@ python3 exploit.py http://localhost:8888/wordpress/ admin admin
 ## Impact:
 Stored XSS on the __floating_widget_text__ parameter and can be affected to various user page. 
 
+![Popup](popup-xss.png)
+
 ## Fix:
 Filter the __floating_widget_text__ parameter with __esc_attr__ function. 
 
