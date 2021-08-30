@@ -63,8 +63,6 @@ Video : https://drive.google.com/file/d/1PnvjHuKCvjmom6xz_sxNLBu3jixCiHy_/view?u
 ## Impact:
 Stored XSS on the __translated__ parameter and can be affected to various user page. 
 
-![Popup](popup-xss.png)
-
 ## Fix:
 Filter the __translated__ parameter with filter function. 
 
@@ -109,6 +107,7 @@ function trp_sanitize_string( $filtered ){
 
 ## How Vendor Mitigation The Issue :
 
+Fixed Version 2.0.9
 File: includes/functions.php
 Line : 151-170
 
@@ -150,4 +149,4 @@ function trp_wp_kses($string){
 24 August 2021 - Fixed & Scheduled disclosure
 30 August 2021 - Approved and added to WPScan database.
 
-Created this page is on 05 - August 2021
+Created this page is on 06 - August 2021
