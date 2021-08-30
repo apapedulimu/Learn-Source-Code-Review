@@ -58,5 +58,7 @@ $floating_widget_text = esc_attr(get_option ('googlelanguagetranslator_floating_
 
 ## Timeline
 05 August 2021 - Report To Vendor
+06 August 2021 - Vendor Respond and says this is intended behaviour
+
 
 Created this page is on 05 - August 2021
