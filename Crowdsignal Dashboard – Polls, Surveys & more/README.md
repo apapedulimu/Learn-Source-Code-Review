@@ -114,7 +114,7 @@ Line : 205
 
 ## Timeline
 07 October 2022 - Report Through Hackerone  
-07 October 2022 - First Response 
+07 October 2022 - First Response  
 03 November 2022 - Triaged  
 07 November 2022 - Resolved  
 16 November 2022 - 100$ Bounty  
