@@ -7,7 +7,7 @@ Vendor Homepage: https://crowdsignal.com/
 Software Link: https://wordpress.org/plugins/polldaddy/  
 Original Report: https://hackerone.com/reports/1725143  
 PatchStack: https://patchstack.com/database/vulnerability/polldaddy/wordpress-crowdsignal-dashboard-plugin-3-0-9-privilege-escalation-vulnerability  
-CVE: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45069  
+CVE: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45069   
 
 ## About the Plugin:
 Version: 3.0.9  
