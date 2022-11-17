@@ -98,7 +98,7 @@ https://drive.google.com/file/d/1mGmDHMbl5_Hcv_bB-YhlrYfTaYOoM1WE/view?usp=share
 
 ## How Vendor Mitigation The Issue :
 
-https://github.com/Automattic/crowdsignal-plugin/pull/89
+https://github.com/Automattic/crowdsignal-plugin/pull/89  
 Fixed Version 3.0.10  
 File: polldaddy.php  
 Line : 205  
