@@ -3,19 +3,19 @@
 ## About The Finding
 Date: 07-10-2022  
 Exploit Author: Nosa Shandy (Apapedulimu)  
-Vendor Homepage: https://crowdsignal.com/ 
-Software Link: https://wordpress.org/plugins/polldaddy/
-Original Report: https://hackerone.com/reports/1725143
-PatchStack: https://patchstack.com/database/vulnerability/polldaddy/wordpress-crowdsignal-dashboard-plugin-3-0-9-privilege-escalation-vulnerability 
-CVE: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45069 
+Vendor Homepage: https://crowdsignal.com/  
+Software Link: https://wordpress.org/plugins/polldaddy/  
+Original Report: https://hackerone.com/reports/1725143  
+PatchStack: https://patchstack.com/database/vulnerability/polldaddy/wordpress-crowdsignal-dashboard-plugin-3-0-9-privilege-escalation-vulnerability  
+CVE: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45069  
 
 ## About the Plugin:
-Version: 3.0.9
-Author: Automattic, Inc.
-Requires WordPress Version: 5.5 or higher
-Requires PHP Version: 5.6 or higher
-Active Installations: 90,000+
-URL: https://wordpress.org/plugins/polldaddy/
+Version: 3.0.9  
+Author: Automattic, Inc.  
+Requires WordPress Version: 5.5 or higher  
+Requires PHP Version: 5.6 or higher  
+Active Installations: 90,000+  
+URL: https://wordpress.org/plugins/polldaddy/  
 
 ## Vulnerability Detail: 
 ## Description: 
@@ -50,9 +50,9 @@ Line : 4298 - 4316
 ```
 
 ## Vulnerable Code 
-However, on the other source code, there's no check that the menu is only for admin.
-File: polldaddy.php
-Line : 1684 - 1711 
+However, on the other source code, there's no check that the menu is only for admin.  
+File: polldaddy.php  
+Line : 1684 - 1711  
 
 ```
 	function settings_page() {
@@ -90,18 +90,18 @@ Line : 1684 - 1711
 2. Navigate to `ratingsettings` page http://{wordpress}/wp-admin/options-general.php?page=ratingsettings&rating=comments
 3. You will be enable to make any changes with the lower roles rather than admin.
 
-Note:
+Note:  
 The menu is also shown on the Settings menu dropdown
 
-Video:
+Video:  
 https://drive.google.com/file/d/1mGmDHMbl5_Hcv_bB-YhlrYfTaYOoM1WE/view?usp=share_link
 
 ## How Vendor Mitigation The Issue :
 
 https://github.com/Automattic/crowdsignal-plugin/pull/89
-Fixed Version 3.0.10
+Fixed Version 3.0.10  
 File: polldaddy.php  
-Line : 205
+Line : 205  
 
 ```
 		foreach( array( 'crowdsignal-settings' => __( 'Crowdsignal', 'polldaddy' ), 'ratingsettings' => __( 'Ratings', 'polldaddy' ) ) as $menu_slug => $page_title ) {
@@ -116,5 +116,5 @@ Line : 205
 07 October 2022 - Report Through Hackerone  
 07 October 2022 - First Response 
 03 November 2022 - Triaged  
-07 November 2022 - Resolved
-16 November 2022 - 100$ Bounty
+07 November 2022 - Resolved  
+16 November 2022 - 100$ Bounty  
