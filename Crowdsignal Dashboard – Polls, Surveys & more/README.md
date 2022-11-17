@@ -23,9 +23,9 @@ The plugin does not implement a proper privilege to non-admin users. With this b
 
 ## Read Code As Documentation : 
 
-This line of code mention that the Rating Settings menu is supposed to be admin only menu. 
-File: polldaddy.php
-Line : 4298 - 4316
+This line of code mention that the Rating Settings menu is supposed to be admin only menu.  
+File: polldaddy.php  
+Line : 4298 - 4316  
 
 ```
 <div class="wrap">
